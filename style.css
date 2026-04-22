@@ -5,7 +5,7 @@
     --text-main: #2c3e50;        /* Deep navy-grey for text */
     --text-muted: #6b7a8a;       /* Lighter grey for secondary text */
     --primary-color: #1a252f;    /* Dark Navy for hero and footer */
-    --accent-color: #9d8c76;     /* Muted Gold/Taupe for elegant accents */
+    --accent-color: #27ae60;     /* Emerald Green to match logo */
     --border-color: #eae5df;     /* Subtle warm border */
 
     /* Typography */
@@ -89,17 +89,21 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5%;
+    padding: 10px 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .logo {
-    font-family: var(--font-en);
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--primary-color);
-    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 90px;
+    width: auto;
+    display: block;
+    mix-blend-mode: multiply; /* Blends white background into the header color */
 }
 
 .nav ul {
@@ -271,24 +275,20 @@ a {
 }
 
 .work-image {
-    height: 200px;
-    background-color: #eeeaeb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    font-family: var(--font-en);
-    font-style: italic;
-    letter-spacing: 0.05em;
+    height: 220px;
     position: relative;
     overflow: hidden;
 }
 
-.work-image::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
+.work-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.work-card:hover .work-img {
+    transform: scale(1.08);
 }
 
 .work-info {
@@ -377,13 +377,11 @@ a {
     min-width: 250px;
 }
 
-.footer-logo {
-    font-family: var(--font-en);
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    margin-bottom: 15px;
-    color: #ffffff;
+.footer-logo-img {
+    height: 70px;
+    width: auto;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .footer-name {
