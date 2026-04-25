@@ -1,12 +1,19 @@
 :root {
     /* Color Palette - Quiet Luxury */
-    --bg-color: #faf9f8;         /* Off-white warm background */
-    --surface-color: #ffffff;    /* Pure white for cards */
-    --text-main: #2c3e50;        /* Deep navy-grey for text */
-    --text-muted: #6b7a8a;       /* Lighter grey for secondary text */
-    --primary-color: #1a252f;    /* Dark Navy for hero and footer */
-    --accent-color: #27ae60;     /* Emerald Green to match logo */
-    --border-color: #eae5df;     /* Subtle warm border */
+    --bg-color: #faf9f8;
+    /* Off-white warm background */
+    --surface-color: #ffffff;
+    /* Pure white for cards */
+    --text-main: #2c3e50;
+    /* Deep navy-grey for text */
+    --text-muted: #6b7a8a;
+    /* Lighter grey for secondary text */
+    --primary-color: #1a252f;
+    /* Dark Navy for hero and footer */
+    --accent-color: #27ae60;
+    /* Emerald Green to match logo */
+    --border-color: #eae5df;
+    /* Subtle warm border */
 
     /* Typography */
     --font-ja: 'Noto Sans JP', sans-serif;
@@ -103,7 +110,8 @@ a {
     height: 90px;
     width: auto;
     display: block;
-    mix-blend-mode: multiply; /* Blends white background into the header color */
+    mix-blend-mode: multiply;
+    /* Blends white background into the header color */
 }
 
 .nav ul {
@@ -183,7 +191,8 @@ a {
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 0.2em;
-    margin-right: -0.2em; /* Compensate for letter-spacing */
+    margin-right: -0.2em;
+    /* Compensate for letter-spacing */
 }
 
 .hero-name-en {
@@ -212,16 +221,57 @@ a {
     color: #fff;
 }
 
-.hero-roles {
-    font-size: 0.95rem;
-    line-height: 2.2;
+.hero-roles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.role-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.role-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    line-height: 1;
+}
+
+.role-text {
     letter-spacing: 0.1em;
+    line-height: 1.6;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.position-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+}
+
+.function-text {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* About Section */
@@ -449,34 +499,38 @@ a {
         gap: 15px;
         padding: 20px 5%;
     }
-    
+
     .nav ul {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .hero-name-ja {
         font-size: 2.2rem;
     }
-    
+
     .hero-name-en {
         font-size: 1.5rem;
     }
-    
+
     .hero-catchphrase {
         font-size: 1.1rem;
     }
 
-    .hero-roles {
-        font-size: 0.85rem;
+    .position-text {
+        font-size: 1.05rem;
     }
-    
+
+    .function-text {
+        font-size: 0.9rem;
+    }
+
     .section-title {
         font-size: 2.2rem;
         margin-bottom: 50px;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
