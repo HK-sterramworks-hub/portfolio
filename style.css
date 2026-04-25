@@ -219,6 +219,11 @@ a {
     letter-spacing: 0.15em;
     font-style: italic;
     color: #fff;
+    line-height: 1.6;
+}
+
+.phrase-segment {
+    display: inline-block;
 }
 
 .hero-roles-container {
@@ -527,7 +532,7 @@ a {
     }
 
     .hero-catchphrase {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .position-text {
