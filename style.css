@@ -381,33 +381,105 @@ a {
 }
 
 .pub-item {
-    border-left: 1px solid var(--accent-color);
-    padding-left: 30px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 35px 40px;
     position: relative;
+    transition: var(--transition);
+}
+
+.pub-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
 
 .pub-item::before {
     content: '';
     position: absolute;
-    left: -4px;
-    top: 10px;
-    width: 7px;
-    height: 7px;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    width: 4px;
     background-color: var(--accent-color);
-    border-radius: 50%;
+    border-radius: 4px 0 0 4px;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.pub-item:hover::before {
+    opacity: 1;
+}
+
+.pub-book-link {
+    display: inline-block;
+    margin-bottom: 12px;
 }
 
 .pub-book {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--text-main);
-    margin-bottom: 8px;
     letter-spacing: 0.05em;
+    line-height: 1.5;
+    transition: var(--transition);
+}
+
+.pub-book-link:hover .pub-book {
+    color: var(--accent-color);
 }
 
 .pub-chapter {
     color: var(--text-muted);
     font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.pub-link-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pub-amazon-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    padding: 6px 0;
+    transition: var(--transition);
+    position: relative;
+}
+
+.pub-amazon-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+    transition: var(--transition);
+}
+
+.pub-amazon-link .arrow {
+    margin-left: 8px;
+    font-family: var(--font-en);
+    transition: transform 0.3s ease;
+}
+
+.pub-amazon-link:hover {
+    color: var(--primary-color);
+}
+
+.pub-amazon-link:hover::after {
+    background-color: var(--accent-color);
+}
+
+.pub-amazon-link:hover .arrow {
+    transform: translateX(4px);
+    color: var(--accent-color);
 }
 
 /* Footer */
@@ -546,6 +618,14 @@ a {
     .section-title {
         font-size: 2.2rem;
         margin-bottom: 50px;
+    }
+
+    .pub-item {
+        padding: 25px 20px;
+    }
+
+    .pub-book {
+        font-size: 1.05rem;
     }
 
     .footer-content {
