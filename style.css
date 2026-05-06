@@ -32,6 +32,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* 固定ヘッダーの高さ分を考慮してスクロール位置を調整 */
+    scroll-padding-top: 120px;
 }
 
 body {
@@ -567,6 +569,11 @@ a {
 
 /* Responsive */
 @media (max-width: 768px) {
+    html {
+        /* スマホ向け：縦長になるヘッダー高 + iPhoneのノッチ(安全領域)を考慮 */
+        scroll-padding-top: calc(130px + env(safe-area-inset-top));
+    }
+
     .section {
         padding: 80px 0;
     }
