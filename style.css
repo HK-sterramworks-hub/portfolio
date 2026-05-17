@@ -176,12 +176,12 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 0.9rem;
-    letter-spacing: 0.25em;
+    font-family: "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     margin-bottom: 30px;
     color: var(--accent-color);
-    font-weight: 400;
-    text-transform: uppercase;
 }
 
 .hero-title {
@@ -199,12 +199,12 @@ a {
 
 .hero-name-en {
     font-family: var(--font-en);
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.7);
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .hero-divider {
@@ -215,13 +215,35 @@ a {
 }
 
 .hero-catchphrase {
+    margin-bottom: 50px;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.phrase-main {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 30px;
     letter-spacing: 0.15em;
-    font-style: italic;
     color: #fff;
-    line-height: 1.6;
+    line-height: 1.5;
+}
+
+.phrase-amp {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    line-height: 1;
+    font-family: var(--font-en);
+}
+
+.phrase-sub {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: #fff;
+    line-height: 1.5;
 }
 
 .phrase-segment {
@@ -231,7 +253,7 @@ a {
 .hero-roles-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -239,13 +261,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .role-label {
-    font-size: 0.8rem;
-    letter-spacing: 0.25em;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    color: var(--accent-color);
     text-align: center;
     line-height: 1;
 }
@@ -264,9 +286,9 @@ a {
 }
 
 .function-text {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.75);
-    font-weight: 300;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
 }
 
 @keyframes fadeIn {
@@ -602,16 +624,37 @@ a {
         margin-top: 80px;
     }
 
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
     .hero-name-ja {
         font-size: 2.2rem;
     }
 
     .hero-name-en {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .hero-catchphrase {
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .phrase-main {
         font-size: 1.05rem;
+    }
+
+    .phrase-amp {
+        font-size: 0.9rem;
+    }
+
+    .phrase-sub {
+        font-size: 1.05rem;
+    }
+
+    .hero-roles-container {
+        gap: 32px;
     }
 
     .position-text {
@@ -619,7 +662,7 @@ a {
     }
 
     .function-text {
-        font-size: 0.9rem;
+        font-size: 1.05rem;
     }
 
     .section-title {
