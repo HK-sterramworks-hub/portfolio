@@ -625,31 +625,43 @@ a {
     }
 
     .hero {
-        padding-top: 140px;
+        padding-top: 130px;
+        padding-bottom: 80px;
+        height: auto;
     }
 
     .hero-content {
+        transform: none;
         margin-top: 0;
     }
 
     .hero-subtitle {
-        font-size: 1.05rem;
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .hero-title {
+        margin-bottom: 36px;
     }
 
     .hero-name-ja {
-        font-size: 2.2rem;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        margin-right: -0.1em;
     }
 
     .hero-name-en {
-        font-size: 1.1rem;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-divider {
+        margin-bottom: 44px;
     }
 
     .hero-catchphrase {
         gap: 16px;
-        margin-bottom: 40px;
-        max-width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 36px;
     }
 
     .phrase-segment {
@@ -658,22 +670,26 @@ a {
 
     .phrase-main,
     .phrase-sub {
-        font-size: clamp(20px, 5vw, 24px);
-        line-height: 1.8;
+        font-size: 19px;
+        line-height: 1.7;
+        letter-spacing: 0.08em;
+        max-width: 88vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .phrase-amp {
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         margin: 0 auto;
     }
 
     .hero-roles-container {
-        gap: 40px;
+        gap: 32px;
     }
 
     .role-label {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .role-text {
@@ -682,9 +698,10 @@ a {
 
     .position-text,
     .function-text {
-        font-size: clamp(20px, 5vw, 24px);
-        line-height: 1.8;
-        max-width: 90vw;
+        font-size: 19px;
+        line-height: 1.7;
+        letter-spacing: 0.06em;
+        max-width: 88vw;
         margin-left: auto;
         margin-right: auto;
     }
