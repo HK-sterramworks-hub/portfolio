@@ -621,7 +621,7 @@ a {
     }
 
     .hero-content {
-        margin-top: 80px;
+        margin-top: 140px;
     }
 
     .hero-subtitle {
@@ -637,32 +637,46 @@ a {
     }
 
     .hero-catchphrase {
-        gap: 8px;
+        gap: 16px;
         margin-bottom: 40px;
     }
 
-    .phrase-main {
-        font-size: 1.05rem;
+    .phrase-segment {
+        display: inline;
+    }
+
+    .phrase-main,
+    .phrase-sub {
+        font-size: 22px;
+        line-height: 1.8;
+        max-width: 90vw;
+        margin: 0 auto;
     }
 
     .phrase-amp {
-        font-size: 0.9rem;
-    }
-
-    .phrase-sub {
-        font-size: 1.05rem;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .hero-roles-container {
-        gap: 32px;
+        gap: 40px;
     }
 
-    .position-text {
-        font-size: 1.05rem;
+    .role-label {
+        font-size: 16px;
     }
 
+    .role-text {
+        word-break: normal;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .position-text,
     .function-text {
-        font-size: 1.05rem;
+        font-size: 22px;
+        line-height: 1.8;
     }
 
     .section-title {
